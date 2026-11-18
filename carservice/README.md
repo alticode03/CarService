@@ -10,6 +10,7 @@ CarService/
 └─carservice/
   ├─README.md
   ├─AlurMain.md
+  ├─prompt.md
   ├─.env
   ├─pom.xml
   └─src/
@@ -22,7 +23,7 @@ CarService/
     │  │     ├─MenuKategori.java
     │  │     ├─MenuKoneksi.java
     │  │     └─MenuProdukJasa.java
-    │  │  └─koneksidbc/
+    │  │  └─koneksijdbc/
     │  │     ├─KoneksiSupabase.java
     │  │     ├─Customer.java
     │  │     ├─Kategori.java
@@ -137,5 +138,5 @@ Pastikan dengan `mvn -version`, lalu jalankan perintah Maven dari folder proyek
   (`1451`/`1452`) ke SQLState PostgreSQL (`23503`), karena `getErrorCode()` selalu 0 di Postgres.
 - `Produk_Jasa.java`: operator `REGEXP` diganti `~` (sintaks regex PostgreSQL) pada `buatKodeBaru()`.
 - `pom.xml`: tambah dependency `org.postgresql:postgresql:42.7.4` sebagai driver JDBC.
-- Source dipindah dari `src/main/koneksidbc/` ke `src/main/java/koneksidbc/` agar ikut dikompilasi Maven.
+- Source DAO ditempatkan di `src/main/java/koneksijdbc/` agar ikut dikompilasi Maven.
 - `README.md`: kredensial Supabase (URL, password DB, JWT anon key) dihapus dari dokumentasi.

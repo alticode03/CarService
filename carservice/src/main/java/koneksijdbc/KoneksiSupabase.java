@@ -1,5 +1,5 @@
 
-package koneksidbc;
+package koneksijdbc;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import java.net.URI;

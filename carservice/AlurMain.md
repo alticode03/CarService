@@ -2,7 +2,7 @@
 
 Dokumen ini menjelaskan pembagian alur terminal setelah menu dipisahkan dari
 [`Main.java`](src/main/java/com/carservice/Main.java). Class DAO tetap berada di
-`koneksidbc` dan tetap bertanggung jawab menjalankan operasi database.
+`koneksijdbc` dan tetap bertanggung jawab menjalankan operasi database.
 
 ## Struktur
 
@@ -16,7 +16,7 @@ com/carservice/
     MenuKoneksi.java
     MenuProdukJasa.java
 
-koneksidbc/
+koneksijdbc/
   Customer.java
   Kategori.java
   KoneksiSupabase.java

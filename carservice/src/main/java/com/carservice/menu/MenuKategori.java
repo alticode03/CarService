@@ -10,7 +10,7 @@ import static com.carservice.menu.InputTerminal.reportUpdate;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-import koneksidbc.Kategori;
+import koneksijdbc.Kategori;
 
 public final class MenuKategori {
 

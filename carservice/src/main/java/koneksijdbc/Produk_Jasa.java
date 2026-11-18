@@ -1,4 +1,4 @@
-package koneksidbc;
+package koneksijdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

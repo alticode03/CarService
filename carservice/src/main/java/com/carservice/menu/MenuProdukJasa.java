@@ -13,7 +13,7 @@ import static com.carservice.menu.InputTerminal.reportUpdate;
 import java.io.PrintStream;
 import java.util.Optional;
 import java.util.Scanner;
-import koneksidbc.Produk_Jasa;
+import koneksijdbc.Produk_Jasa;
 
 public final class MenuProdukJasa {
 

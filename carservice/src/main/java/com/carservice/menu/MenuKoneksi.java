@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import koneksidbc.KoneksiSupabase;
+import koneksijdbc.KoneksiSupabase;
 
 public final class MenuKoneksi {
 

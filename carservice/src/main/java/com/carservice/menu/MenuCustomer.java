@@ -9,7 +9,7 @@ import static com.carservice.menu.InputTerminal.reportUpdate;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-import koneksidbc.Customer;
+import koneksijdbc.Customer;
 
 public final class MenuCustomer {
 
