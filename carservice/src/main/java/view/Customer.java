@@ -32,7 +32,7 @@ public class Customer extends javax.swing.JFrame {
 
     // ===== Tambahan logika (di luar kode otomatis NetBeans) =====
     // Nama class form ini sama dengan class DAO, jadi DAO dipanggil dengan nama lengkap.
-    private koneksidbc.Customer dao;
+    private koneksijdbc.Customer dao;
     private boolean koneksiOk = false;
 
     /** null = mode tambah, berisi ID = mode ubah */
@@ -343,7 +343,7 @@ public class Customer extends javax.swing.JFrame {
 
         // DAO dibuat sekali per form
         try {
-            dao = new koneksidbc.Customer();
+            dao = new koneksijdbc.Customer();
             koneksiOk = dao.st != null;
         } catch (Exception e) {
             koneksiOk = false;

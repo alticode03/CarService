@@ -6,6 +6,7 @@ import com.carservice.menu.MenuCustomer;
 import com.carservice.menu.MenuKategori;
 import com.carservice.menu.MenuKoneksi;
 import com.carservice.menu.MenuProdukJasa;
+import com.carservice.menu.MenuTransaction;
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -19,6 +20,7 @@ public class Main {
         MenuCustomer customerMenu = new MenuCustomer();
         MenuKategori kategoriMenu = new MenuKategori();
         MenuProdukJasa produkJasaMenu = new MenuProdukJasa();
+        MenuTransaction transactionMenu = new MenuTransaction();
 
         while (true) {
             output.println();
@@ -28,8 +30,11 @@ public class Main {
             output.println("3. CRUD produk/jasa");
             output.println("4. Tes koneksi JDBC dan cek tabel");
             output.println("5. Tes Supabase Auth API");
+            output.println("6. Riwayat transaksi, struk, dan pengelolaan data");
             output.println("0. Keluar");
+
             String choice = readLine(input, output, "Pilih: ");
+
             if (choice == null) {
                 return;
             }
@@ -50,11 +55,14 @@ public class Main {
                 case "5":
                     MenuKoneksi.testSupabaseAuth();
                     break;
+                case "6":
+                    transactionMenu.run(input, output);
+                    break;
                 case "0":
                     output.println("Selesai.");
                     return;
                 default:
-                    output.println("Pilihan tidak dikenal. Masukkan angka 0 sampai 5.");
+                    output.println("Pilihan tidak dikenal. Masukkan angka 0 sampai 6.");
             }
         }
     }
